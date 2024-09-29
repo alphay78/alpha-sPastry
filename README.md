@@ -16,19 +16,22 @@ Manage orders and update menu items efficiently.
 Database Integration:
 
 Utilizes PostgreSQL to store and manage all relevant information.
-⚙️ Technology Stack
-Frontend
+                                  ⚙️ Technology Stack
+1.Frontend
 React: A powerful JavaScript library for building interactive user interfaces.
 Tailwind CSS: A utility-first CSS framework for rapid styling and responsive design.
 Bootstrap: A front-end framework providing pre-built components and grid systems for a clean layout.
-Backend
+
+2.Backend
 Node.js: A JavaScript runtime for developing scalable server-side applications.
 Express.js: A web framework for Node.js, streamlining the development of APIs.
-Database
+
+3.Database
 PostgreSQL: An open-source relational database management system for robust data storage.
 Additional Libraries
 CORS: Middleware for enabling Cross-Origin Resource Sharing.
 Body-parser: Middleware for parsing incoming request bodies.
+
 🚀 Getting Started
 Prerequisites
 Make sure you have the following installed:
