@@ -16,7 +16,8 @@ Manage orders and update menu items efficiently.
 Database Integration:
 
 Utilizes PostgreSQL to store and manage all relevant information.
-                                  ⚙️ Technology Stack
+                                                                                                                                                                           
+                       ⚙️ Technology Stack
 1.Frontend
 React: A powerful JavaScript library for building interactive user interfaces.
 Tailwind CSS: A utility-first CSS framework for rapid styling and responsive design.
