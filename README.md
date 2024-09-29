@@ -4,18 +4,20 @@ Overview
 Welcome to the Restaurant Website, a full-stack application designed to showcase a delightful pastry shop. This platform allows users to explore various cake options, place orders online, and provides an admin panel for managing orders and menu items.
 
 🌟 Key Features
-A.User-Friendly Interface:
+
+          A.User-Friendly Interface:
 
 Intuitive navigation with a responsive design.
-                                                                                                                                                                        B.Online Ordering:
+                                                                                                                                                                        
+          B.Online Ordering:
 
 Browse and order cakes directly from the menu.
                                                                                                                                                                          
-C.Admin Panel:
+           C.Admin Panel:
 
 Manage orders and update menu items efficiently.
                                                                                                                                                                       
-D.Database Integration:
+            D.Database Integration:
 
 Utilizes PostgreSQL to store and manage all relevant information.
                                                                                                                                                                            
