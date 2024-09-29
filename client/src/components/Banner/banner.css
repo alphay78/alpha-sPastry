@@ -1,3 +1,5 @@
+/* Styles the banner with a background image, sets its height, and ensures the image covers the entire div. 
+   The text inside the banner is centered and styled with padding, font size, and font weight. */
 .banner{
     background-image: url("https://radiustheme.com/demo/wordpress/themes/panpie/wp-content/themes/panpie/assets/img/banner.png");
     height: 70vh;

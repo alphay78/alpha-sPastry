@@ -1,18 +1,23 @@
 // src/components/About.js
 import React from "react";
-import "./About.css";
-import heroImage from "../../assets/hero-image.jpg";
+import "./About.css"; // Importing the CSS file for styling this component
+import heroImage from "../../assets/hero-image.jpg"; // Importing the hero image to be used in the background
 
 const About = () => {
   return (
     <div className="about-page">
-      <div className="flex justify-center items-center bg-center bg-fixed w-full h-[250px] lg:h-[370px] uppercase"
+      {/* Hero section with background image */}
+      <div
+        className="flex justify-center items-center bg-center bg-fixed w-full h-[250px] lg:h-[370px] uppercase"
         style={{
           backgroundImage: `url(${heroImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-        }}>
+        }}
+      >
         {/* <img src={heroImage} alt="Hero" className="hero-image" /> */}
+
+        {/* Overlay text on the hero section */}
         <div className="text-[44px] lg:text-[64px] text-white text-center font-bold">
           <h1 className="hero-title">Our Story</h1>
           <p className="hero-subtitle">
@@ -20,7 +25,10 @@ const About = () => {
           </p>
         </div>
       </div>
+
+      {/* Content section describing the company's story */}
       <div className="content">
+        {/* Section about the company's beginning */}
         <div className="section">
           <h2 className="section-title">The Beginning</h2>
           <p className="section-text">
@@ -29,6 +37,8 @@ const About = () => {
             cherished bakery, every step has been driven by our passion.
           </p>
         </div>
+
+        {/* Section about the company's mission */}
         <div className="section">
           <h2 className="section-title">Our Mission</h2>
           <p className="section-text">
@@ -37,6 +47,8 @@ const About = () => {
             flavors.
           </p>
         </div>
+
+        {/* Section about the company's values */}
         <div className="section">
           <h2 className="section-title">Our Values</h2>
           <p className="section-text">

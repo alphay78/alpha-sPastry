@@ -1,7 +1,8 @@
-import React from "react";
-import Slider from "react-slick"; 
-import "./ReviewPage.css"; 
+import React from "react"; // Import React
+import Slider from "react-slick"; // Import the Slider component from react-slick
+import "./ReviewPage.css"; // Import the associated CSS file
 
+// Array of customer reviews
 const reviews = [
   "Amazing ambiance—the best café setting in Addis.",
   "So gorgeous and calming. It makes me want to stay.",
@@ -18,28 +19,41 @@ const reviews = [
 ];
 
 const ReviewSlideshow = () => {
+  // Slider settings for autoplay and appearance
   const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
+    dots: true, // Show navigation dots
+    infinite: true, // Enable infinite scrolling
+    speed: 500, // Transition speed
+    slidesToShow: 1, // Number of slides to show at once
+    slidesToScroll: 1, // Number of slides to scroll at a time
+    autoplay: true, // Enable autoplay
+    autoplaySpeed: 3000, // Autoplay speed in milliseconds
   };
 
   return (
     <div className="reviews-slideshow">
-      <h1 className="reviews-title">What Our Customers Say</h1>
+      {" "}
+      {/* Container for the slideshow */}
+      <h1 className="reviews-title">What Our Customers Say</h1>{" "}
+      {/* Title of the review section */}
       <Slider {...settings}>
-        {reviews.map((review, index) => (
-          <div key={index} className="review-card">
-            <p className="review-text">"{review}"</p>
-          </div>
-        ))}
+        {" "}
+        {/* Slider component with specified settings */}
+        {reviews.map(
+          (
+            review,
+            index // Map through reviews to create slides
+          ) => (
+            <div key={index} className="review-card">
+              {" "}
+              {/* Individual review card */}
+              <p className="review-text">"{review}"</p> {/* Review text */}
+            </div>
+          )
+        )}
       </Slider>
     </div>
   );
 };
 
-export default ReviewSlideshow;
+export default ReviewSlideshow; // Export the ReviewSlideshow component

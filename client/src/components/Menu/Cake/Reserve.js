@@ -1,13 +1,13 @@
 import ChocolateLoversImage from "../../../assets/CheeseCake/chocolate-lovers-cheesecake.jpg";
 import OreoCheeseCakeImage from "../../../assets/CheeseCake/oreo-cheesecake.jpg";
 import PeanutButterCakeImage from "../../../assets/CheeseCake/Peanut Butter Cheese Cake.jpg";
-
 import PeppermintCheesecakeImage from "../../../assets/CheeseCake/Peppermint-Cheesecake.jpg";
 import ChocolateEspressoCakeImage from "../../../assets/Chocolate/chocolate-espresso-cake.jpg";
 import HotChocolateFudgeCakeImage from "../../../assets/Chocolate/hot-chocolate-fudge-cake.jpg";
 import HotChocolateFudgeCupcakeImage from "../../../assets/Chocolate/hot-chocolate-fudge-cupcake.jpg";
 import HotChocolateFudgeMinicakeImage from "../../../assets/Chocolate/hot-chocolate-fudge-minicake.jpg";
 
+// Exporting an array of product objects with details for each dessert item
 export const products = [
   {
     id: 1,
@@ -30,7 +30,7 @@ export const products = [
     title: "Peanut Butter Cheesecake",
     category: "Cheese Cake",
     price: 8.99,
-    image: PeanutButterCakeImage, // Make sure to set the correct image path
+    image: PeanutButterCakeImage, // Ensure correct image path is set
     desc: `A rich cheesecake layered with peanut butter and topped with chocolate drizzle.`,
   },
   {

@@ -1,68 +1,69 @@
 .home-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 90vh;
-  background-image: url('../../assets/Home.jpg'); 
-  background-size: cover;
-  background-position: center; 
-  background-repeat: no-repeat; 
-  text-align: center;
-  color: #fff;
-  padding: 20px;
-  position: relative; 
-  overflow-x: hidden;
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  min-height: 90vh; /* Minimum height to cover most of the viewport */
+  background-image: url('../../assets/Home.jpg'); /* Background image */
+  background-size: cover; /* Cover entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* No repeating of the background image */
+  text-align: center; /* Center text alignment */
+  color: #fff; /* White text color */
+  padding: 20px; /* Padding around the container */
+  position: relative; /* Positioning context for absolutely positioned children */
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 .home-content {
-  background-color: rgba(0, 0, 0, 0.5); 
-  padding: 20px;
-  width: 232vh;
-  border-radius: 8px;
-  transition: opacity 1s ease-in-out; 
-  opacity: 0; 
-  position: absolute; 
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for content */
+  padding: 20px; /* Padding inside the content */
+  width: 232vh; /* Fixed width for content */
+  border-radius: 8px; /* Rounded corners */
+  transition: opacity 1s ease-in-out; /* Smooth opacity transition */
+  opacity: 0; /* Initial opacity hidden */
+  position: absolute; /* Absolute positioning for centering */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for centering */
 }
 
 .home-content.show {
-  opacity: 1; 
+  opacity: 1; /* Show content when 'show' class is added */
 }
 
 h1 {
-  font-size: 3rem;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  color: #fff;
+  font-size: 3rem; /* Large font size for main heading */
+  font-family: Georgia, 'Times New Roman', Times, serif; /* Font family for heading */
+  color: #fff; /* White text color */
 }
 
 h2 {
-  font-size: 7rem;
-  color: #fff;
-}
-h3 {
-  font-size: 3rem;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  color: #fff;
+  font-size: 7rem; /* Very large font size for secondary heading */
+  color: #fff; /* White text color */
 }
 
+h3 {
+  font-size: 3rem; /* Large font size for third-level heading */
+  font-family: Georgia, 'Times New Roman', Times, serif; /* Font family for heading */
+  color: #fff; /* White text color */
+}
 
 .explore-button {
-  font-size: 1.25rem;
-  color: #fff;
-  background-color: transparent;
-  border:#fff solid;
-  padding: 10px 20px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-size: 1.25rem; /* Font size for button text */
+  color: #fff; /* White text color */
+  background-color: transparent; /* Transparent background initially */
+  border: #fff solid; /* White border */
+  padding: 10px 20px; /* Padding inside the button */
+  border-radius: 8px; /* Rounded corners for button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
 .explore-button:hover {
-  background-color: #7EACB5;
+  background-color: #7EACB5; /* Background color change on hover */
 }
-.title{
-  color: #fff;
+
+.title {
+  color: #fff; /* White text color for title */
 }

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import "./ContactUs.css"; 
+import "./ContactUs.css";
 
 const OrderForm = () => {
+  // State to manage form data
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -10,49 +11,46 @@ const OrderForm = () => {
     orderDate: "",
   });
 
+  // Handle input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value,
+      [name]: value, // Update specific field
     }));
   };
 
+  // Handle form submission
   const handleSubmit = async (e) => {
-    e.preventDefault();
-  
-    // Debug: Log the current form data before sending
+    e.preventDefault(); // Prevent default form submission
+
+    // Debug: Log current form data
     console.log("Current Form Data:", formData);
-  
+
+    // Reformat data for backend compatibility
     const reorderedFormData = {
       name: formData.name,
       email: formData.email,
-      cake_type: formData.cakeType, // Rename to match backend
-    cake_size: formData.cakeSize, // Rename to match backend
-    order_date: formData.orderDate,
+      cake_type: formData.cakeType, // Match backend field name
+      cake_size: formData.cakeSize, // Match backend field name
+      order_date: formData.orderDate,
     };
-  
+
     console.log("Order Data Submitted:", reorderedFormData);
-  
+
     try {
+      // Send POST request to server
       const response = await fetch("http://localhost:5000/submit/order", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(reorderedFormData),
+        body: JSON.stringify(reorderedFormData), // Send data as JSON
       });
-  
-      // if (!response.ok) {
-      //   throw new Error("Network response was not ok");
-      // }
-  
+
       console.log("Order placed successfully!");
-      
-      // Optionally log response from backend
-      // const responseData = await response.json();
-      // console.log("Backend Response:", responseData);
-      
+
+      // Reset form after submission
       setFormData({
         name: "",
         email: "",
@@ -61,10 +59,10 @@ const OrderForm = () => {
         orderDate: "",
       });
     } catch (error) {
+      // Log any error during submission
       console.error("Error submitting the order:", error);
     }
   };
-  
 
   return (
     <div className="order-container">
@@ -74,14 +72,14 @@ const OrderForm = () => {
       </p>
       <form className="order-form" onSubmit={handleSubmit}>
         <div className="form-group">
-        <input
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          value={formData.name}
-          onChange={handleChange}
-          required // Ensure this field is required
-/>
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            value={formData.name}
+            onChange={handleChange}
+            required // Ensure this field is required
+          />
         </div>
         <div className="form-group">
           <input

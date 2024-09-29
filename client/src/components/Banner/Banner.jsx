@@ -1,3 +1,5 @@
+
+// Banner component that displays a menu text inside a styled banner div
 import React from "react";
 import "./banner.css";
 

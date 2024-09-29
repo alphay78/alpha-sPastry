@@ -1,26 +1,26 @@
 .cakeContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px;
-
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange children in a column */
+  gap: 20px; /* Space between child elements */
+  padding: 20px; /* Padding around the container */
 }
 
 .categoryTitle {
-  margin: 0;
-  padding: 10px 0;
-  text-align: center;
-  font-size: 24px;
+  margin: 0; /* Remove default margin */
+  padding: 10px 0; /* Vertical padding for the title */
+  text-align: center; /* Center the text */
+  font-size: 24px; /* Set font size for category titles */
 }
 
 .drink_card {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 10px;
+  display: flex; /* Use flexbox for drink card layout */
+  justify-content: flex-start; /* Align items to the start */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  gap: 20px; /* Space between drink cards */
+  padding: 10px; /* Padding around drink cards */
 }
-.cakeCard{
-  margin-left: auto;
-  margin-right: auto;
+
+.cakeCard {
+  margin-left: auto; /* Center cake card horizontally */
+  margin-right: auto; /* Center cake card horizontally */
 }

@@ -1,3 +1,4 @@
+// Importing images for the cake products
 import ChocolateLoversImage from "../../../assets/CheeseCake/chocolate-lovers-cheesecake.jpg";
 import OreoCheeseCakeImage from "../../../assets/CheeseCake/oreo-cheesecake.jpg";
 import PeanutButterCakeImage from "../../../assets/CheeseCake/Peanut Butter Cheese Cake.jpg";
@@ -13,14 +14,15 @@ import BridalCakeImage from "../../../assets/Torta/Bridal Cake.jpg";
 import chocolateOreoImage from "../../../assets/Torta/chocolate-oreo.jpg";
 import vanillaChipsCake from "../../../assets/Torta/vanilla-chips-cake.jpg";
 
+// Exporting an array of product objects for cakes
 export const products = [
   {
     id: 1,
     title: "Chocolate Lovers Cheesecake",
-    category: "Cheese Cake",
-    price: 5.99,
-    image: ChocolateLoversImage,
-    desc: `A decadent cheesecake topped with rich chocolate and a cookie crust.`,
+    category: "Cheese Cake", // Category of the product
+    price: 5.99, // Price of the product
+    image: ChocolateLoversImage, // Image of the product
+    desc: `A decadent cheesecake topped with rich chocolate and a cookie crust.`, // Description of the product
   },
   {
     id: 2,
@@ -78,7 +80,7 @@ export const products = [
     image: HotChocolateFudgeMinicakeImage,
     desc: `A delightful mini cake filled with hot chocolate fudge flavor, perfect for a small treat.`,
   },
-   {
+  {
     id: 9,
     title: "Alpha Special",
     category: "Torta",
@@ -111,4 +113,3 @@ export const products = [
     desc: `A light and fluffy vanilla cake sprinkled with chocolate chips.`,
   },
 ];
-
