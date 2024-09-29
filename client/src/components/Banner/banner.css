@@ -1,0 +1,17 @@
+.banner{
+    background-image: url("https://radiustheme.com/demo/wordpress/themes/panpie/wp-content/themes/panpie/assets/img/banner.png");
+    height: 70vh;
+    /* margin-top: 80px; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+.banner__text{
+    padding: 100px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    font-weight: 700;
+}

@@ -1,0 +1,15 @@
+.drink_card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1px;
+    justify-content: center;
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    place-items: center;
+}
+.drink__title{
+    padding: 30px 0;
+    text-align: center;
+    color: black;
+}

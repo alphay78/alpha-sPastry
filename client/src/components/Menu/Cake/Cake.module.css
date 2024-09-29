@@ -1,0 +1,26 @@
+.cakeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+
+}
+
+.categoryTitle {
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 24px;
+}
+
+.drink_card {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+}
+.cakeCard{
+  margin-left: auto;
+  margin-right: auto;
+}

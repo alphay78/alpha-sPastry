@@ -1,0 +1,195 @@
+.admin-dashboard {
+    padding: 20px;
+    max-width: 600px; /* Maximum width for the dashboard */
+    margin: auto; /* Center the dashboard */
+    font-family: Arial, sans-serif; /* Set a clean font */
+  }
+  
+  h1 {
+    text-align: center; /* Center the title */
+    color: #333; /* Dark color for the title */
+    margin-bottom: 20px; /* Space below the title */
+  }
+  
+  table {
+    width: 100%; /* Full width for the table */
+    border-collapse: collapse; /* Remove double borders */
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd; /* Light grey border for table */
+  /* background-color: #0056b3; */
+/* overflow-x: hidden; */
+  }
+  
+  th, td {
+    padding: 12px; /* Padding for table cells */
+    text-align: left; /* Align text to the left */
+    color: #333; /* Dark color for table text */
+  }
+  
+  th {
+    background-color: #f2f2f2; /* Light grey background for header */
+    color: #333; /* Dark color for header text */
+    font-weight: bold; /* Bold text for headers */
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light background for even rows */
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1; /* Light background on row hover */
+  }
+  
+
+  /* AdminDashboard.css */
+
+.admin-dashboard {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  /* background-color: #f4f4f9; */
+  border-radius: 8px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.admin-dashboard h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.admin-dashboard table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+
+}
+
+.admin-dashboard table th,
+.admin-dashboard table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.admin-dashboard table th {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+.admin-dashboard table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.admin-dashboard table tr:hover {
+  background-color: #eaeaea;
+}
+
+.admin-dashboard .action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.admin-dashboard .action-buttons button {
+  padding: 6px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.admin-dashboard .action-buttons button.delete-btn {
+  background-color: #dc3545;
+}
+
+.admin-dashboard .action-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.admin-dashboard .action-buttons button.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.admin-dashboard .loading,
+.admin-dashboard .error {
+  text-align: center;
+  color: #555;
+  font-size: 18px;
+}
+
+.edit-form {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+.edit-form h2{
+  font-size: 30px;
+  color: black;
+}
+form button{
+  background-color: #f77f00;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+
+/* new css  */
+
+/* Add this to your AdminDashboard.css */
+
+/* Make the table container scrollable on smaller screens */
+.admin-dashboard {
+  width: 100%; /* Use full width */
+  margin: 0 auto;
+  padding: 20px;
+  /* background-color: #f4f4f9; */
+  border-radius: 8px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  /*overflow-x: auto;  Enable horizontal scrolling */
+}
+
+.admin-dashboard table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px; /* Set a minimum width to prevent columns from shrinking too much */
+}
+
+.btn1{
+  background-color: #f77f00;
+border-radius: 5px;
+padding: 5px 10px;
+color:white;
+cursor:pointer;
+}
+.btn2{
+  background-color:#4B727A ;
+  border-radius: 5px;
+  padding: 2px 5px;
+  color:white;
+  cursor:pointer;
+  margin-top: 2px;
+}
+/* For smaller screens */
+@media only screen and (max-width: 768px) {
+  .admin-dashboard table {
+    width: 100%; /* Ensure it stays at 100% */
+  }
+
+  .admin-dashboard {
+    overflow-x: auto; /* Add horizontal scroll if necessary */
+  }
+}
