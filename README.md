@@ -33,10 +33,4 @@ Additional Libraries
 CORS: Middleware for enabling Cross-Origin Resource Sharing.
 Body-parser: Middleware for parsing incoming request bodies.
 
-🚀 Getting Started
-Prerequisites
-Make sure you have the following installed:
 
-Node.js (version 14 or higher)
-PostgreSQL
-Git
