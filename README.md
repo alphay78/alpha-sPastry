@@ -39,4 +39,13 @@ Body-parser: Middleware for parsing incoming request bodies.
 
 -I Have created one table to accept orders. The Query is commented in db.js file.
 
+CREATE TABLE OurOrders (
+    order_id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    cake_type VARCHAR(50) NOT NULL,
+    cake_size VARCHAR(20) NOT NULL,
+    order_date DATE NOT NULL
+);
+
 
